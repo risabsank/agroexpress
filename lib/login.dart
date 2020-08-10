@@ -24,16 +24,20 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              TextFormField(
-                decoration: const InputDecoration(
-                  labelText: 'Username',
-              ),
-                validator: (value) {
-                  if (value.isEmpty) {
-                    return 'No Username Has Been Entered';
-                  }
-                  return null;
-                },
+              Container(
+                margin: EdgeInsets.all(10.0),
+                color: Colors.black12,
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    labelText: 'Username',
+                ),
+                  validator: (value) {
+                    if (value.isEmpty) {
+                      return 'No Username Has Been Entered';
+                    }
+                    return null;
+                  },
+                ),
               ),
               SizedBox(
                 height: 20.0,
