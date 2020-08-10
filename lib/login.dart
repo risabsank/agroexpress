@@ -15,21 +15,34 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Container(
       decoration: BoxDecoration(
       image: DecorationImage(
-        image: AssetImage("assets/images/bulb.jpg"),
+        image: AssetImage("assets/login.jpg"),
         fit: BoxFit.cover,
           ),
         ),
         child: Form(
           key: _formKey,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
-                margin: EdgeInsets.all(10.0),
-                color: Colors.black12,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
+                  color: Colors.black12,
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
                 child: TextFormField(
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
                   decoration: const InputDecoration(
                     labelText: 'Username',
+                    contentPadding: EdgeInsets.only(left: 20.0),
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                    ),
+                    border: InputBorder.none,
                 ),
                   validator: (value) {
                     if (value.isEmpty) {
@@ -42,16 +55,33 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 20.0,
               ),
-              TextFormField(
-                decoration: const InputDecoration(
-                  labelText: 'Password',
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
+                  color: Colors.black12,
+                  borderRadius: BorderRadius.circular(20.0),
                 ),
-                validator: (value) {
-                  if (value.isEmpty) {
-                    return 'No Password Has Been Entered';
-                  }
-                  return null;
-                },
+                margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+                child: TextFormField(
+                  obscureText: true,
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                  decoration: const InputDecoration(
+                    labelText: 'Password',
+                    contentPadding: EdgeInsets.only(left: 20.0),
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                    ),
+                    border: InputBorder.none,
+                  ),
+                  validator: (value) {
+                    if (value.isEmpty) {
+                      return 'No Password Has Been Entered';
+                    }
+                    return null;
+                  },
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
@@ -65,8 +95,25 @@ class _LoginScreenState extends State<LoginScreen> {
                           .showSnackBar(SnackBar(content: Text('Processing Data')));
                     }
                   },
-                  child: Text('Submit'),
+                  child: Text('Login'),
                 ),
+              ),
+              Container(
+                child: Text.rich(
+                  TextSpan(
+                    text: 'Don\'t have an account yet? ',
+                    style: TextStyle(color: Colors.white),
+                    children: <TextSpan>[
+                      TextSpan(
+                          text: 'Register.',
+                          style: TextStyle(
+                            decoration: TextDecoration.underline,
+                            color: Colors.white
+                          )),
+                      // can add more TextSpans here...
+                    ],
+                  ),
+                )
               ),
             ],
           ),
