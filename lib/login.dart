@@ -1,3 +1,4 @@
+import 'package:agroexpress/usertype.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -25,13 +26,16 @@ class _LoginScreenState extends State<LoginScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SizedBox(
+                height: 20.0,
+              ),
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.white),
                   color: Colors.black12,
                   borderRadius: BorderRadius.circular(20.0),
                 ),
-                margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+                margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 7.5),
                 child: TextFormField(
                   style: TextStyle(
                     color: Colors.white,
@@ -61,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   color: Colors.black12,
                   borderRadius: BorderRadius.circular(20.0),
                 ),
-                margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+                margin: EdgeInsets.fromLTRB(20.0, 7.5, 20.0, 30.0),
                 child: TextFormField(
                   obscureText: true,
                   style: TextStyle(
@@ -83,37 +87,47 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
-                child: RaisedButton(
-                  onPressed: () {
-                    // Validate returns true if the form is valid, or false
-                    // otherwise.
-                    if (_formKey.currentState.validate()) {
-                      // If the form is valid, display a Snackbar.
-                      Scaffold.of(context)
-                          .showSnackBar(SnackBar(content: Text('Processing Data')));
-                    }
-                  },
-                  child: Text('Login'),
+              //TODO: Remember Me Checkbox
+              Container(
+                margin: EdgeInsets.only(bottom: 20.0),
+                padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                decoration: BoxDecoration(
+                  color: Colors.black12,
+                  border: Border.all(color: Colors.white),
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                child: FlatButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ),
               Container(
-                child: Text.rich(
-                  TextSpan(
-                    text: 'Don\'t have an account yet? ',
-                    style: TextStyle(color: Colors.white),
-                    children: <TextSpan>[
-                      TextSpan(
-                          text: 'Register.',
-                          style: TextStyle(
-                            decoration: TextDecoration.underline,
-                            color: Colors.white
-                          )),
-                      // can add more TextSpans here...
-                    ],
+                child: FlatButton(
+                  onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => UserType())),
+                  child: Text.rich(
+                    TextSpan(
+                      text: 'Don\'t have an account yet? ',
+                      style: TextStyle(color: Colors.white),
+                      children: <TextSpan>[
+                        TextSpan(
+                            text: 'Register.',
+                            style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              color: Colors.white
+                            )),
+                        // can add more TextSpans here...
+                      ],
+                    ),
                   ),
                 )
+              ),
+              SizedBox(
+                height: 10.0,
               ),
             ],
           ),
