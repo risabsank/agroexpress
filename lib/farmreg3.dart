@@ -15,11 +15,11 @@ class _FarmRegThreeState extends State<FarmRegThree> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/farmreg3.png"),
-            fit: BoxFit.cover,
-          ),
+        image: DecorationImage(
+          image: AssetImage("assets/farmreg3.png"),
+          fit: BoxFit.cover,
         ),
+      ),
         child: Form(
           key: _formKey,
           child: Column(
