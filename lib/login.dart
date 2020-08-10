@@ -27,7 +27,28 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                height: 20.0,
+                height: 135.0,
+              ),
+              Text(
+                "The AGRO Express!",
+                style: TextStyle(
+                  fontSize: 30.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 5.0,
+              ),
+              Text(
+                "The New Way of Buying Groceries",
+                style: TextStyle(
+                  fontSize: 15.0,
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(
+                height: 40.0,
               ),
               Container(
                 decoration: BoxDecoration(
@@ -43,6 +64,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   decoration: const InputDecoration(
                     labelText: 'Username',
                     contentPadding: EdgeInsets.only(left: 20.0),
+                    prefixIcon: Padding(
+                      padding: EdgeInsets.symmetric(vertical: 5.0),
+                      child: ImageIcon(
+                        AssetImage('assets/formicon.png'),
+                        color: Colors.green,
+                      ),
+                    ),
                     labelStyle: TextStyle(
                       color: Colors.white,
                     ),
@@ -74,6 +102,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   decoration: const InputDecoration(
                     labelText: 'Password',
                     contentPadding: EdgeInsets.only(left: 20.0),
+                    prefixIcon: Padding(
+                      padding: EdgeInsets.symmetric(vertical: 5.0),
+                      child: ImageIcon(
+                        AssetImage('assets/formicon.png'),
+                        color: Colors.green,
+                      ),
+                    ),
                     labelStyle: TextStyle(
                       color: Colors.white,
                     ),
@@ -89,7 +124,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               //TODO: Remember Me Checkbox
               Container(
-                margin: EdgeInsets.only(bottom: 20.0),
+                margin: EdgeInsets.only(bottom: 15.0),
                 padding: const EdgeInsets.symmetric(horizontal: 5.0),
                 decoration: BoxDecoration(
                   color: Colors.black12,
@@ -127,7 +162,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 )
               ),
               SizedBox(
-                height: 10.0,
+                height: 95.0,
+              ),
+              Image.asset("assets/agroicon.png", scale: 14),
+              Text(
+                "AGRO Express",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 10.0,
+                ),
               ),
             ],
           ),
