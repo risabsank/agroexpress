@@ -22,41 +22,45 @@ class _BuyRegTwoState extends State<BuyRegTwo> {
         ),
         child: Form(
           key: _formKey,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
             children: <Widget>[
               SizedBox(
-                height: 100.0,
+                height: 85.0,
               ),
-              Text(
-                "Almost Set!",
-                style: TextStyle(
-                  fontSize: 30.0,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+              Center(
+                child: Text(
+                  "Almost Set!",
+                  style: TextStyle(
+                    fontSize: 30.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               SizedBox(
                 height: 5.0,
               ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 10.0),
-                child: Text(
-                  "Fill out the boxes below and",
-                  style: TextStyle(
-                    fontSize: 15.0,
-                    color: Colors.white,
+              Center(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10.0),
+                  child: Text(
+                    "Fill out the boxes below and",
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 10.0),
-                child: Text(
-                  "your one step closer!",
-                  style: TextStyle(
-                    fontSize: 15.0,
-                    color: Colors.white,
+              Center(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10.0),
+                  child: Text(
+                    "your one step closer!",
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),

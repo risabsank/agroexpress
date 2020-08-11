@@ -22,41 +22,45 @@ class _FarmRegThreeState extends State<FarmRegThree> {
       ),
         child: Form(
           key: _formKey,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
             children: <Widget>[
               SizedBox(
-                height: 100.0,
+                height: 85.0,
               ),
-              Text(
-                "Getting Closer!",
-                style: TextStyle(
-                  fontSize: 30.0,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+              Center(
+                child: Text(
+                  "Getting Closer!",
+                  style: TextStyle(
+                    fontSize: 30.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               SizedBox(
                 height: 5.0,
               ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 10.0),
-                child: Text(
-                  "Fill out the boxes below and",
-                  style: TextStyle(
-                    fontSize: 15.0,
-                    color: Colors.white,
+              Center(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10.0),
+                  child: Text(
+                    "Fill out the boxes below and",
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 10.0),
-                child: Text(
-                  "your almost done!",
-                  style: TextStyle(
-                    fontSize: 15.0,
-                    color: Colors.white,
+              Center(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10.0),
+                  child: Text(
+                    "your almost done!",
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
@@ -132,7 +136,7 @@ class _FarmRegThreeState extends State<FarmRegThree> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
+                margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 18.0),
                 padding: const EdgeInsets.symmetric(horizontal: 5.0),
                 decoration: BoxDecoration(
                   color: Colors.black12,
@@ -140,7 +144,7 @@ class _FarmRegThreeState extends State<FarmRegThree> {
                   borderRadius: BorderRadius.circular(20.0),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 10.0),
+                  padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 5.0),
                   child: FlatButton(
                     onPressed: () {},
                     child: Text(

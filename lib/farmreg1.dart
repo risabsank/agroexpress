@@ -22,41 +22,45 @@ class _FarmRegOneState extends State<FarmRegOne> {
         ),
         child: Form(
           key: _formKey,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
             children: <Widget>[
             SizedBox(
-            height: 100.0,
+            height: 85.0,
             ),
-              Text(
-                "Glad to Have You!",
-                style: TextStyle(
-                  fontSize: 30.0,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+              Center(
+                child: Text(
+                  "Glad to Have You!",
+                  style: TextStyle(
+                    fontSize: 30.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               SizedBox(
                 height: 5.0,
               ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 10.0),
-                child: Text(
-                  "Fill out the boxes below to get",
-                  style: TextStyle(
-                    fontSize: 15.0,
-                    color: Colors.white,
+              Center(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10.0),
+                  child: Text(
+                    "Fill out the boxes below to get",
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 10.0),
-                child: Text(
-                  "your account started!",
-                  style: TextStyle(
-                    fontSize: 15.0,
-                    color: Colors.white,
+              Center(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 10.0),
+                  child: Text(
+                    "your account started!",
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
