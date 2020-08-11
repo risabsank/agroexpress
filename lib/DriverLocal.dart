@@ -1,13 +1,12 @@
-import 'package:agroexpress/BuyerHome.dart';
-import 'package:agroexpress/BuyerSettings1.dart';
+import 'package:agroexpress/DriverHome.dart';
 import 'package:flutter/material.dart';
 
-class BuyerLocal extends StatefulWidget {
+class DriverLocal extends StatefulWidget {
   @override
-  _BuyerLocalState createState() => _BuyerLocalState();
+  _DriverLocalState createState() => _DriverLocalState();
 }
 
-class _BuyerLocalState extends State<BuyerLocal> {
+class _DriverLocalState extends State<DriverLocal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,8 +43,8 @@ class _BuyerLocalState extends State<BuyerLocal> {
                             Padding(
                               padding: const EdgeInsets.all(5.0),
                               child: Icon(
-                                Icons.info_outline,
-                                color: Colors.black
+                                  Icons.info_outline,
+                                  color: Colors.black
                               ),
                             ),
                             Padding(
@@ -64,19 +63,19 @@ class _BuyerLocalState extends State<BuyerLocal> {
                                 Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 0.0, horizontal: 20.0),
                                   child: ImageIcon(
-                                    AssetImage('assets/barn.png'),
-                                    color: Colors.black,
-                                    size: 60.0
+                                      AssetImage('assets/barn.png'),
+                                      color: Colors.black,
+                                      size: 60.0
                                   ),
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.all(5.0),
                                   child: Text(
-                                      "2.1 mi",
+                                    "2.1 mi",
                                     style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 15.0,
-                                      fontWeight: FontWeight.bold
+                                        color: Colors.black,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.bold
                                     ),
                                   ),
                                 ),
@@ -88,9 +87,9 @@ class _BuyerLocalState extends State<BuyerLocal> {
                                 Text(
                                   "Fairmount Farm",
                                   style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black,
-                                    fontSize: 27.0
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      fontSize: 27.0
                                   ),
                                 ),
                                 SizedBox(
@@ -105,7 +104,7 @@ class _BuyerLocalState extends State<BuyerLocal> {
                                   ),
                                 ),
                                 SizedBox(
-                                  height: 30.0
+                                    height: 30.0
                                 ),
                               ],
                             ),
@@ -394,13 +393,13 @@ class _BuyerLocalState extends State<BuyerLocal> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Flexible(
-                    flex: 5,
+                    flex: 4,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: FlatButton(
-                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerHome())),
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => DriverHome())),
                         child: Icon(
-                          Icons.home,
+                          Icons.directions_car,
                           color: Colors.black45,
                           size: 35.0,
                         ),
@@ -408,11 +407,11 @@ class _BuyerLocalState extends State<BuyerLocal> {
                     ),
                   ),
                   Flexible(
-                    flex: 5,
+                    flex: 4,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: FlatButton(
-                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerLocal())),
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => DriverLocal())),
                         child: ImageIcon(
                           AssetImage("assets/location.png"),
                           color: Colors.black,
@@ -422,13 +421,13 @@ class _BuyerLocalState extends State<BuyerLocal> {
                     ),
                   ),
                   Flexible(
-                    flex: 5,
+                    flex: 4,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: FlatButton(
                         onPressed: () {},
                         child: Icon(
-                          Icons.search,
+                          Icons.location_on,
                           color: Colors.black45,
                           size: 35.0,
                         ),
@@ -436,27 +435,13 @@ class _BuyerLocalState extends State<BuyerLocal> {
                     ),
                   ),
                   Flexible(
-                    flex: 5,
+                    flex: 4,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: FlatButton(
-                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerSetOne())),
+                        onPressed: () => {},
                         child: Icon(
                           Icons.settings,
-                          color: Colors.black45,
-                          size: 35.0,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Flexible(
-                    flex: 5,
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 10.0),
-                      child: FlatButton(
-                        onPressed: () {},
-                        child: Icon(
-                          Icons.add_shopping_cart,
                           color: Colors.black45,
                           size: 35.0,
                         ),

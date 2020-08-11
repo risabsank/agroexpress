@@ -162,13 +162,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   child: FlatButton(
                     onPressed: () {
-                      if (usernameController.text == "buyer") {
+                      if (usernameController.text == "RSBuys") {
                         Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerHome()));
                       }
-                      else if (usernameController.text == "farmer") {
+                      else if (usernameController.text == "VJFarms") {
                         Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmerHome()));
                       }
-                      else if (usernameController.text == "driver") {
+                      else if (usernameController.text == "TBDrives") {
                         Navigator.push(context, new MaterialPageRoute(builder: (_) => DriverHome()));
                       }
                       print(username);

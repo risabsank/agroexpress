@@ -1,4 +1,5 @@
 import 'package:agroexpress/BuyerLocal.dart';
+import 'package:agroexpress/BuyerSettings1.dart';
 import 'package:flutter/material.dart';
 
 class BuyerHome extends StatefulWidget {
@@ -246,49 +247,82 @@ class _BuyerHomeState extends State<BuyerHome> {
             ),
             Container(
               decoration: BoxDecoration(
-                color: Colors.white60,
-                borderRadius: BorderRadius.circular(15.0)
+                  color: Colors.white60,
+                  borderRadius: BorderRadius.circular(15.0)
               ),
               margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 5.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 15.0),
-                      child: Icon(
-                        Icons.home,
-                        color: Colors.black,
-                        size: 35.0,
-                      ),
-                    ),
-                  FlatButton(
-                    onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerLocal())),
+                  Flexible(
+                    flex: 5,
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 15.0),
-                      child: ImageIcon(
-                        AssetImage("assets/location.png"),
-                        color: Colors.black45,
-                        size: 35.0,
+                      padding: const EdgeInsets.symmetric(vertical: 10.0),
+                      child: FlatButton(
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerHome())),
+                        child: Icon(
+                          Icons.home,
+                          color: Colors.black,
+                          size: 35.0,
+                        ),
                       ),
                     ),
                   ),
-                  Icon(
-                    Icons.search,
-                    color: Colors.black45,
-                    size: 35.0,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                    child: Icon(
-                      Icons.settings,
-                      color: Colors.black45,
-                      size: 35.0,
+                  Flexible(
+                    flex: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10.0),
+                      child: FlatButton(
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerLocal())),
+                        child: ImageIcon(
+                          AssetImage("assets/location.png"),
+                          color: Colors.black45,
+                          size: 35.0,
+                        ),
+                      ),
                     ),
                   ),
-                  Icon(
-                    Icons.add_shopping_cart,
-                    color: Colors.black45,
-                    size: 35.0,
+                  Flexible(
+                    flex: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10.0),
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Icon(
+                          Icons.search,
+                          color: Colors.black45,
+                          size: 35.0,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    flex: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10.0),
+                      child: FlatButton(
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerSetOne())),
+                        child: Icon(
+                          Icons.settings,
+                          color: Colors.black45,
+                          size: 35.0,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    flex: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10.0),
+                      child: FlatButton(
+                        onPressed: () {},
+                        child: Icon(
+                          Icons.add_shopping_cart,
+                          color: Colors.black45,
+                          size: 35.0,
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),
