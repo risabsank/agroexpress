@@ -1,3 +1,6 @@
+import 'package:agroexpress/BuyerHome.dart';
+import 'package:agroexpress/DriverHome.dart';
+import 'package:agroexpress/FarmerHome.dart';
 import 'package:agroexpress/usertype.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +11,9 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
+  String username, password;
+  final usernameController = TextEditingController();
+  final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -16,163 +22,203 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Container(
       decoration: BoxDecoration(
       image: DecorationImage(
-        image: AssetImage("assets/login.jpg"),
+        image: AssetImage("assets/farmreg3.png"),
         fit: BoxFit.cover,
           ),
         ),
         child: Form(
           key: _formKey,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              SizedBox(
-                height: 135.0,
-              ),
-              Text(
-                "The AGRO Express!",
-                style: TextStyle(
-                  fontSize: 30.0,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+          child: Center(
+            child: ListView(
+              children: <Widget>[
+                SizedBox(
+                  height: 80.0,
                 ),
-              ),
-              SizedBox(
-                height: 5.0,
-              ),
-              Text(
-                "The New Way of Buying Groceries",
-                style: TextStyle(
-                  fontSize: 15.0,
-                  color: Colors.white,
-                ),
-              ),
-              SizedBox(
-                height: 40.0,
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  color: Colors.black12,
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 7.5),
-                child: TextFormField(
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                  decoration: const InputDecoration(
-                    labelText: 'Username',
-                    contentPadding: EdgeInsets.only(left: 20.0),
-                    prefixIcon: Padding(
-                      padding: EdgeInsets.symmetric(vertical: 5.0),
-                      child: ImageIcon(
-                        AssetImage('assets/formicon.png'),
-                        color: Colors.green,
-                      ),
-                    ),
-                    labelStyle: TextStyle(
-                      color: Colors.white,
-                    ),
-                    border: InputBorder.none,
-                ),
-                  validator: (value) {
-                    if (value.isEmpty) {
-                      return 'No Username Has Been Entered';
-                    }
-                    return null;
-                  },
-                ),
-              ),
-              SizedBox(
-                height: 20.0,
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  color: Colors.black12,
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                margin: EdgeInsets.fromLTRB(20.0, 7.5, 20.0, 30.0),
-                child: TextFormField(
-                  obscureText: true,
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                  decoration: const InputDecoration(
-                    labelText: 'Password',
-                    contentPadding: EdgeInsets.only(left: 20.0),
-                    prefixIcon: Padding(
-                      padding: EdgeInsets.symmetric(vertical: 5.0),
-                      child: ImageIcon(
-                        AssetImage('assets/formicon.png'),
-                        color: Colors.green,
-                      ),
-                    ),
-                    labelStyle: TextStyle(
-                      color: Colors.white,
-                    ),
-                    border: InputBorder.none,
-                  ),
-                  validator: (value) {
-                    if (value.isEmpty) {
-                      return 'No Password Has Been Entered';
-                    }
-                    return null;
-                  },
-                ),
-              ),
-              //TODO: Remember Me Checkbox
-              Container(
-                margin: EdgeInsets.only(bottom: 15.0),
-                padding: const EdgeInsets.symmetric(horizontal: 5.0),
-                decoration: BoxDecoration(
-                  color: Colors.black12,
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                child: FlatButton(
-                  onPressed: () {},
+                Center(
                   child: Text(
-                    'Login',
+                    "The AGRO Express!",
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 5.0,
+                ),
+                Center(
+                  child: Text(
+                    "The New Way of Buying Groceries",
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 40.0,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.white),
+                    color: Colors.black12,
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  margin: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 7.5),
+                  child: TextFormField(
+                    keyboardType: TextInputType.emailAddress,
                     style: TextStyle(
                       color: Colors.white,
                     ),
+                    decoration: const InputDecoration(
+                      labelText: 'Username',
+                      contentPadding: EdgeInsets.only(left: 20.0),
+                      prefixIcon: Padding(
+                        padding: EdgeInsets.symmetric(vertical: 5.0),
+                        child: ImageIcon(
+                          AssetImage('assets/formicon.png'),
+                          color: Colors.green,
+                        ),
+                      ),
+                      labelStyle: TextStyle(
+                        color: Colors.white,
+                      ),
+                      border: InputBorder.none,
+                  ),
+                    validator: (value) {
+                      if (value.isEmpty) {
+                        return 'No Username Has Been Entered';
+                      }
+                      return null;
+                    },
+                    controller: usernameController,
                   ),
                 ),
-              ),
-              Container(
-                child: FlatButton(
-                  onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => UserType())),
-                  child: Text.rich(
-                    TextSpan(
-                      text: 'Don\'t have an account yet? ',
-                      style: TextStyle(color: Colors.white),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text: 'Register.',
-                            style: TextStyle(
-                              decoration: TextDecoration.underline,
-                              color: Colors.white
-                            )),
-                        // can add more TextSpans here...
-                      ],
+                SizedBox(
+                  height: 20.0,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.white),
+                    color: Colors.black12,
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  margin: EdgeInsets.fromLTRB(20.0, 7.5, 20.0, 5.0),
+                  child: TextFormField(
+                    obscureText: true,
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                    decoration: const InputDecoration(
+                      labelText: 'Password',
+                      contentPadding: EdgeInsets.only(left: 20.0),
+                      prefixIcon: Padding(
+                        padding: EdgeInsets.symmetric(vertical: 5.0),
+                        child: ImageIcon(
+                          AssetImage('assets/formicon.png'),
+                          color: Colors.green,
+                        ),
+                      ),
+                      labelStyle: TextStyle(
+                        color: Colors.white,
+                      ),
+                      border: InputBorder.none,
+                    ),
+                    validator: (value) {
+                      if (value.isEmpty) {
+                        return 'No Password Has Been Entered';
+                      }
+                      return null;
+                    },
+                    controller: passwordController,
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Checkbox(
+                        value: true,
+                        checkColor: Colors.white,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 3.0),
+                      child: Text(
+                        "Remember Me",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 120.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                  decoration: BoxDecoration(
+                    color: Colors.black12,
+                    border: Border.all(color: Colors.white),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: FlatButton(
+                    onPressed: () {
+                      if (usernameController.text == "buyer") {
+                        Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerHome()));
+                      }
+                      else if (usernameController.text == "farmer") {
+                        Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmerHome()));
+                      }
+                      else if (usernameController.text == "driver") {
+                        Navigator.push(context, new MaterialPageRoute(builder: (_) => DriverHome()));
+                      }
+                      print(username);
+                      print(password);
+                    },
+                    child: Text(
+                      'Login',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
                   ),
-                )
-              ),
-              SizedBox(
-                height: 95.0,
-              ),
-              Image.asset("assets/agroicon.png", scale: 14),
-              Text(
-                "AGRO Express",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 10.0,
                 ),
-              ),
-            ],
+                Container(
+                  child: FlatButton(
+                    onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => UserType())),
+                    child: Text.rich(
+                      TextSpan(
+                        text: 'Don\'t have an account yet? ',
+                        style: TextStyle(color: Colors.white),
+                        children: <TextSpan>[
+                          TextSpan(
+                              text: 'Register.',
+                              style: TextStyle(
+                                decoration: TextDecoration.underline,
+                                color: Colors.white
+                              )),
+                          // can add more TextSpans here...
+                        ],
+                      ),
+                    ),
+                  )
+                ),
+                SizedBox(
+                  height: 80.0,
+                ),
+                Column(
+                  children: [
+                    Image.asset("assets/agroicon.png", scale: 14),
+                    Text(
+                      "AGRO Express",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 10.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
