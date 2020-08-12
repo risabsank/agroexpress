@@ -146,7 +146,7 @@ class _BuyerSetTwoState extends State<BuyerSetTwo> {
                 child: FlatButton(
                   onPressed: () {},
                   child: Text(
-                    "Edit Profile",
+                    "Edit Information",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 15.0,

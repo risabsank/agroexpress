@@ -1,3 +1,4 @@
+import 'package:agroexpress/FarmerSettings1.dart';
 import 'package:flutter/material.dart';
 
 class FarmerHome extends StatefulWidget {
@@ -35,7 +36,7 @@ class _FarmerHomeState extends State<FarmerHome> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmerHome())),
                         child: Icon(
                           Icons.control_point,
                           color: Colors.black,
@@ -63,7 +64,7 @@ class _FarmerHomeState extends State<FarmerHome> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: FlatButton(
-                        onPressed: () => {},
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmerSetOne())),
                         child: Icon(
                           Icons.settings,
                           color: Colors.black45,
