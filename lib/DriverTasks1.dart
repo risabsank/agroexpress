@@ -90,6 +90,12 @@ class _DriveTaskOneState extends State<DriveTaskOne> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -157,6 +163,12 @@ class _DriveTaskOneState extends State<DriveTaskOne> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -214,29 +226,39 @@ class _DriveTaskOneState extends State<DriveTaskOne> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      color: Colors.white24,
-                      borderRadius: BorderRadius.circular(20.0)
+                        color: Colors.white24,
+                        borderRadius: BorderRadius.circular(20.0)
                     ),
                     margin: EdgeInsets.symmetric(horizontal: 10.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Checkbox(
-                          value: _value1,
-                          onChanged: _value1Changed,
-                          checkColor: Colors.white,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 3.0),
-                          child: Text(
-                            "Click When Task is Completed",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 17.0
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.white, width: 3.0)
+                              ),
+                              child: Checkbox(
+                                value: _value1,
+                                onChanged: _value1Changed,
+                                checkColor: Colors.white,
+                              ),
+                              width: 20.0,
+                              height: 20.0
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 15.0),
+                            child: Text(
+                              "Click When Task is Completed",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 17.0
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -252,6 +274,12 @@ class _DriveTaskOneState extends State<DriveTaskOne> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -319,6 +347,12 @@ class _DriveTaskOneState extends State<DriveTaskOne> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -380,25 +414,35 @@ class _DriveTaskOneState extends State<DriveTaskOne> {
                         borderRadius: BorderRadius.circular(20.0)
                     ),
                     margin: EdgeInsets.symmetric(horizontal: 10.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Checkbox(
-                          value: _value2,
-                          onChanged: _value2Changed,
-                          checkColor: Colors.white,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 3.0),
-                          child: Text(
-                            "Click When Task is Completed",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 17.0
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white, width: 3.0)
+                            ),
+                            child: Checkbox(
+                              value: _value2,
+                              onChanged: _value2Changed,
+                              checkColor: Colors.white,
+                            ),
+                            width: 20.0,
+                            height: 20.0
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 15.0),
+                            child: Text(
+                              "Click When Task is Completed",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 17.0
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                   SizedBox(

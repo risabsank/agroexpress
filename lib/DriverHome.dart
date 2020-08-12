@@ -84,6 +84,12 @@ class _DriverHomeState extends State<DriverHome> {
                           fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black45,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -156,6 +162,12 @@ class _DriverHomeState extends State<DriverHome> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black45,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -221,6 +233,12 @@ class _DriverHomeState extends State<DriverHome> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black45,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -293,6 +311,12 @@ class _DriverHomeState extends State<DriverHome> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black45,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -358,6 +382,12 @@ class _DriverHomeState extends State<DriverHome> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black45,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -430,6 +460,12 @@ class _DriverHomeState extends State<DriverHome> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black45,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -495,6 +531,12 @@ class _DriverHomeState extends State<DriverHome> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black45,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
@@ -567,6 +609,12 @@ class _DriverHomeState extends State<DriverHome> {
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          new BoxShadow(
+                            color: Colors.black45,
+                            blurRadius: 10.0,
+                          ),
+                        ],
                       ),
                       margin: EdgeInsets.symmetric(horizontal: 10.0),
                       child: Column(
