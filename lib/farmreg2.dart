@@ -25,7 +25,7 @@ class _FarmRegTwoState extends State<FarmRegTwo> {
           child: ListView(
             children: <Widget>[
               SizedBox(
-                height: 85.0,
+                height: 115.0,
               ),
               Center(
                 child: Text(
@@ -204,7 +204,7 @@ class _FarmRegTwoState extends State<FarmRegTwo> {
                 ),
               ),
               SizedBox(
-                height: 95.0,
+                height: 125.0,
               ),
               Row(
                 children: <Widget> [
@@ -214,7 +214,7 @@ class _FarmRegTwoState extends State<FarmRegTwo> {
                         border: Border.all(color: Colors.white),
                         borderRadius: BorderRadius.circular(50.0)
                     ),
-                    margin: EdgeInsets.fromLTRB(10.0, 0.0, 50.0, 0.0),
+                    margin: EdgeInsets.fromLTRB(10.0, 0.0, 57.5, 0.0),
                     child: FlatButton(
                       onPressed: ()  => Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmRegOne())),
                       child: Text(
@@ -231,13 +231,13 @@ class _FarmRegTwoState extends State<FarmRegTwo> {
                     children: [
                       Align(
                         alignment: Alignment.center,
-                        child: Image.asset("assets/agroicon.png", scale: 14),
+                        child: Image.asset("assets/agroicon.png", scale: 12),
                       ),
                       Text(
                         "AGRO Express",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 10.0,
+                          fontSize: 12.0,
                         ),
                       ),
                     ],
@@ -248,7 +248,7 @@ class _FarmRegTwoState extends State<FarmRegTwo> {
                         border: Border.all(color: Colors.white),
                         borderRadius: BorderRadius.circular(50.0)
                     ),
-                    margin: EdgeInsets.fromLTRB(55.0, 0.0, 10.0, 0.0),
+                    margin: EdgeInsets.fromLTRB(57.5, 0.0, 10.0, 0.0),
                     child: FlatButton(
                       onPressed: ()  => Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmRegThree())),
                       child: Text(

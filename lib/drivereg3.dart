@@ -21,7 +21,7 @@ class _DriveRegThreeState extends State<DriveRegThree> {
         child: Column(
           children: [
             SizedBox(
-              height: 50.0,
+              height: 100.0,
             ),
             Text(
               "Verify!",
@@ -124,7 +124,7 @@ class _DriveRegThreeState extends State<DriveRegThree> {
               ),
             ),
             SizedBox(
-              height: 45.0,
+              height: 55.0,
             ),
             Row(
               children: <Widget> [
@@ -134,7 +134,7 @@ class _DriveRegThreeState extends State<DriveRegThree> {
                       border: Border.all(color: Colors.white),
                       borderRadius: BorderRadius.circular(50.0)
                   ),
-                  margin: EdgeInsets.fromLTRB(10.0, 0.0, 50.0, 0.0),
+                  margin: EdgeInsets.fromLTRB(10.0, 0.0, 57.5, 0.0),
                   child: FlatButton(
                     onPressed: ()  => Navigator.push(context, new MaterialPageRoute(builder: (_) => DriveRegTwo())),
                     child: Text(
@@ -151,13 +151,13 @@ class _DriveRegThreeState extends State<DriveRegThree> {
                   children: [
                     Align(
                       alignment: Alignment.center,
-                      child: Image.asset("assets/agroicon.png", scale: 14),
+                      child: Image.asset("assets/agroicon.png", scale: 12),
                     ),
                     Text(
                       "AGRO Express",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 10.0,
+                        fontSize: 12.0,
                       ),
                     ),
                   ],
@@ -168,7 +168,7 @@ class _DriveRegThreeState extends State<DriveRegThree> {
                       border: Border.all(color: Colors.white),
                       borderRadius: BorderRadius.circular(50.0)
                   ),
-                  margin: EdgeInsets.fromLTRB(55.0, 0.0, 10.0, 0.0),
+                  margin: EdgeInsets.fromLTRB(57.5, 0.0, 10.0, 0.0),
                   child: FlatButton(
                     onPressed: ()  => Navigator.push(context, new MaterialPageRoute(builder: (_) => TermsService())),
                     child: Text(

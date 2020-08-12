@@ -37,7 +37,7 @@ class _BuyerSetOneState extends State<BuyerSetOne> {
                   Flexible(
                     flex:2,
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 40.0),
+                      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 50.0),
                       child: FlatButton(
                         onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerSetOne())),
                         child: Icon(
@@ -51,7 +51,7 @@ class _BuyerSetOneState extends State<BuyerSetOne> {
                   Flexible(
                     flex: 2,
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 40.0),
+                      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 50.0),
                       child: FlatButton(
                         onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerSetTwo())),
                         child: Icon(
@@ -66,7 +66,7 @@ class _BuyerSetOneState extends State<BuyerSetOne> {
               ),
             ),
             Container(
-              height: 415.0,
+              height: 477.0,
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
@@ -255,7 +255,7 @@ class _BuyerSetOneState extends State<BuyerSetOne> {
               ),
             ),
             SizedBox(
-              height: 10.0,
+              height: 15.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

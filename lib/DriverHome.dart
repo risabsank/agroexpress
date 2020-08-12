@@ -1,4 +1,6 @@
 import 'package:agroexpress/DriverLocal.dart';
+import 'package:agroexpress/DriverMaps.dart';
+import 'package:agroexpress/DriverSettings1.dart';
 import 'package:flutter/material.dart';
 
 class DriverHome extends StatefulWidget {
@@ -64,7 +66,7 @@ class _DriverHomeState extends State<DriverHome> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: FlatButton(
-                          onPressed: () {},
+                          onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => DriverMaps())),
                           child: Icon(
                             Icons.location_on,
                             color: Colors.black45,
@@ -78,7 +80,7 @@ class _DriverHomeState extends State<DriverHome> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10.0),
                         child: FlatButton(
-                          onPressed: () => {},
+                          onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => DriveSetOne())),
                           child: Icon(
                             Icons.settings,
                             color: Colors.black45,

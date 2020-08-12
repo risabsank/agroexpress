@@ -25,7 +25,7 @@ class _BuyerHomeState extends State<BuyerHome> {
               height: 30.0,
             ),
             Container(
-              height: 550.0,
+              height: 615.0,
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
@@ -250,7 +250,7 @@ class _BuyerHomeState extends State<BuyerHome> {
                   color: Colors.white60,
                   borderRadius: BorderRadius.circular(15.0)
               ),
-              margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 5.0),
+              margin: EdgeInsets.fromLTRB(5.0, 12.0, 5.0, 5.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

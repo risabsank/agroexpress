@@ -36,7 +36,7 @@ class _BuyerSetTwoState extends State<BuyerSetTwo> {
                 Flexible(
                   flex:2,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 40.0),
+                    padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 50.0),
                     child: FlatButton(
                       onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerSetOne())),
                       child: Icon(
@@ -50,7 +50,7 @@ class _BuyerSetTwoState extends State<BuyerSetTwo> {
               Flexible(
                 flex: 2,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 40.0),
+                  padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 50.0),
                   child: FlatButton(
                     onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerSetTwo())),
                     child: Icon(
@@ -73,7 +73,7 @@ class _BuyerSetTwoState extends State<BuyerSetTwo> {
                   borderRadius: BorderRadius.circular(15.0),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 120.0, vertical: 5.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 135.0, vertical: 5.0),
                     child: Column(
                       children: [
                         Text(
@@ -156,7 +156,7 @@ class _BuyerSetTwoState extends State<BuyerSetTwo> {
                 ),
               ),
               SizedBox(
-                height: 125.0,
+                height: 195.0,
               ),
               Container(
                 decoration: BoxDecoration(

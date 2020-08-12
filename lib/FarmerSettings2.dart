@@ -72,7 +72,7 @@ class _FarmerSetTwoState extends State<FarmerSetTwo> {
                 borderRadius: BorderRadius.circular(15.0),
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 120.0, vertical: 5.0),
+                padding: const EdgeInsets.symmetric(horizontal: 135.0, vertical: 5.0),
                 child: Column(
                   children: [
                     Text(
@@ -155,7 +155,7 @@ class _FarmerSetTwoState extends State<FarmerSetTwo> {
               ),
             ),
             SizedBox(
-              height: 125.0,
+              height: 195.0,
             ),
             Container(
               decoration: BoxDecoration(

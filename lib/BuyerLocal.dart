@@ -24,7 +24,7 @@ class _BuyerLocalState extends State<BuyerLocal> {
               height: 30.0,
             ),
             Container(
-              height: 550.0,
+              height: 620.0,
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
@@ -381,6 +381,96 @@ class _BuyerLocalState extends State<BuyerLocal> {
                       ],
                     ),
                   ),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                  Container(
+                    width: 350,
+                    height: 125.0,
+                    margin: EdgeInsets.symmetric(horizontal: 10.0),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20.0),
+                      color: Colors.white24,
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: Icon(
+                                  Icons.info_outline,
+                                  color: Colors.black
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 0.0),
+                              child: Icon(
+                                Icons.check_circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 0.0, horizontal: 20.0),
+                                  child: ImageIcon(
+                                      AssetImage('assets/barn.png'),
+                                      color: Colors.black,
+                                      size: 60.0
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(5.0),
+                                  child: Text(
+                                    "20.9 mi",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.bold
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Wadsworth Farm",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      fontSize: 25.0
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 5.0,
+                                ),
+                                Text(
+                                  "Franklin, MA",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                    fontSize: 17.0,
+                                  ),
+                                ),
+                                SizedBox(
+                                    height: 30.0
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -389,7 +479,7 @@ class _BuyerLocalState extends State<BuyerLocal> {
                   color: Colors.white60,
                   borderRadius: BorderRadius.circular(15.0)
               ),
-              margin: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 5.0),
+              margin: EdgeInsets.fromLTRB(5.0, 12.0, 5.0, 5.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

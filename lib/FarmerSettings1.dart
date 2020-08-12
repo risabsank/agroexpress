@@ -36,7 +36,7 @@ class _FarmerSetOneState extends State<FarmerSetOne> {
                   Flexible(
                     flex:2,
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 40.0),
+                      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 50.0),
                       child: FlatButton(
                         onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmerSetOne())),
                         child: Icon(
@@ -50,7 +50,7 @@ class _FarmerSetOneState extends State<FarmerSetOne> {
                   Flexible(
                     flex: 2,
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 40.0),
+                      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 50.0),
                       child: FlatButton(
                         onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmerSetTwo())),
                         child: Icon(
@@ -65,7 +65,7 @@ class _FarmerSetOneState extends State<FarmerSetOne> {
               ),
             ),
             Container(
-              height: 415.0,
+              height: 477.0,
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
@@ -300,7 +300,7 @@ class _FarmerSetOneState extends State<FarmerSetOne> {
               ),
             ),
             SizedBox(
-              height: 10.0,
+              height: 15.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

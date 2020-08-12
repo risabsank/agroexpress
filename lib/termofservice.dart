@@ -23,7 +23,7 @@ class _TermsServiceState extends State<TermsService> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             SizedBox(
-              height: 50.0,
+              height: 100.0,
             ),
           Text(
             "Welcome!",
@@ -68,14 +68,14 @@ class _TermsServiceState extends State<TermsService> {
                 borderRadius: BorderRadius.circular(20.0),
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 27.0),
+                padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 45.0),
                 child: FlatButton(
                   onPressed: () {},
                     child: Text(
                       'Click to Read Terms of Service',
                       style: TextStyle(
                         color: Colors.white60,
-                        fontSize: 15.0,
+                        fontSize: 17.0,
                       ),
                     ),
                   ),
@@ -90,14 +90,14 @@ class _TermsServiceState extends State<TermsService> {
                 borderRadius: BorderRadius.circular(20.0),
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 5.0),
+                padding: const EdgeInsets.symmetric(vertical: 30.0, horizontal: 25.0),
                 child: FlatButton(
                   onPressed: () {},
                   child: Text(
                     'Click to Read Community Guidelines',
                     style: TextStyle(
                       color: Colors.white60,
-                      fontSize: 15.0,
+                      fontSize: 17.0,
                     ),
                   ),
                 ),
@@ -116,21 +116,24 @@ class _TermsServiceState extends State<TermsService> {
               child: Row(
                 children: [
                   Image.asset("assets/formicon.png", scale: 2),
+                  SizedBox(
+                    width: 10.0,
+                  ),
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "By clicking Create Account, you have accepted and agreed ",
+                        "By clicking Create Account, you have accepted and ",
                             style: TextStyle(
                             color: Colors.white,
-                              fontSize: 10.0,
+                              fontSize: 12.0,
                       ),
                       ),
                       Text(
-                        "to the ToS and Community Guidelines. ",
+                        "agreed to the ToS and Community Guidelines. ",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 10.0,
+                          fontSize: 12.0,
                         ),
                       ),
                     ],
@@ -149,7 +152,7 @@ class _TermsServiceState extends State<TermsService> {
                       border: Border.all(color: Colors.white),
                       borderRadius: BorderRadius.circular(50.0)
                   ),
-                  margin: EdgeInsets.fromLTRB(10.0, 0.0, 50.0, 0.0),
+                  margin: EdgeInsets.fromLTRB(10.0, 0.0, 60.0, 0.0),
                   child: FlatButton(
                     onPressed: ()  => Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmRegThree())),
                     child: Text(
@@ -183,7 +186,7 @@ class _TermsServiceState extends State<TermsService> {
                       border: Border.all(color: Colors.white),
                       borderRadius: BorderRadius.circular(50.0)
                   ),
-                  margin: EdgeInsets.fromLTRB(22.0, 0.0, 10.0, 0.0),
+                  margin: EdgeInsets.fromLTRB(40.0, 0.0, 10.0, 0.0),
                   child: FlatButton(
                     onPressed: ()  => Navigator.push(context, new MaterialPageRoute(builder: (_) => LoginScreen())),
                     child: Text(

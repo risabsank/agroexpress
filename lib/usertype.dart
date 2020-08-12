@@ -29,7 +29,7 @@ class _UserTypeState extends State<UserType> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                height: 30.0,
+                height: 85.0,
               ),
               Text(
                 "Hey There!",
@@ -148,19 +148,19 @@ class _UserTypeState extends State<UserType> {
                     ),
                   ),
                   SizedBox(
-                    width: 57.0,
+                    width: 60.0,
                   ),
                   Column(
                     children: [
                       Align(
                         alignment: Alignment.center,
-                          child: Image.asset("assets/agroicon.png", scale: 14)
+                          child: Image.asset("assets/agroicon.png", scale: 12)
                       ),
                       Text(
                           "AGRO Express",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 10.0,
+                          fontSize: 12.0,
                         )
                       ),
                     ],

@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: ListView(
               children: <Widget>[
                 SizedBox(
-                  height: 80.0,
+                  height: 120.0,
                 ),
                 Center(
                   child: Text(
@@ -178,6 +178,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       'Login',
                       style: TextStyle(
                         color: Colors.white,
+                        fontSize: 15.0
                       ),
                     ),
                   ),
@@ -188,14 +189,16 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Text.rich(
                       TextSpan(
                         text: 'Don\'t have an account yet? ',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.white, fontSize: 15.0),
                         children: <TextSpan>[
                           TextSpan(
                               text: 'Register.',
                               style: TextStyle(
                                 decoration: TextDecoration.underline,
-                                color: Colors.white
-                              )),
+                                color: Colors.white,
+                                fontSize: 15.0,
+                              ),
+                          ),
                           // can add more TextSpans here...
                         ],
                       ),
@@ -203,16 +206,16 @@ class _LoginScreenState extends State<LoginScreen> {
                   )
                 ),
                 SizedBox(
-                  height: 80.0,
+                  height: 110.0,
                 ),
                 Column(
                   children: [
-                    Image.asset("assets/agroicon.png", scale: 14),
+                    Image.asset("assets/agroicon.png", scale: 12),
                     Text(
                       "AGRO Express",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 10.0,
+                        fontSize: 12.0,
                       ),
                     ),
                   ],
