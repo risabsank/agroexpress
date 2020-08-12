@@ -15,6 +15,9 @@ class _LoginScreenState extends State<LoginScreen> {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
 
+  bool _value1 = false;
+  void _value1Changed(bool value) => setState(() => _value1 = value);
+
   @override
   Widget build(BuildContext context) {
     // Build a Form widget using the _formKey created above.
@@ -138,7 +141,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Checkbox(
-                        value: true,
+                        value: _value1,
+                        onChanged: _value1Changed,
                         checkColor: Colors.white,
                     ),
                     Padding(
