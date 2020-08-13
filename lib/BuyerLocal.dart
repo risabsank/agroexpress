@@ -1,3 +1,4 @@
+import 'package:agroexpress/BuyerCart.dart';
 import 'package:agroexpress/BuyerHome.dart';
 import 'package:agroexpress/BuyerSearch.dart';
 import 'package:agroexpress/BuyerSettings1.dart';
@@ -544,7 +545,7 @@ class _BuyerLocalState extends State<BuyerLocal> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyCart())),
                         child: Icon(
                           Icons.add_shopping_cart,
                           color: Colors.black45,

@@ -1,3 +1,4 @@
+import 'package:agroexpress/BuyerCart.dart';
 import 'package:agroexpress/BuyerHome.dart';
 import 'package:agroexpress/BuyerLocal.dart';
 import 'package:agroexpress/BuyerSettings1.dart';
@@ -424,7 +425,8 @@ class _BuyerSearchState extends State<BuyerSearch> {
                       ],
                     ),
                   ),
-                ),SizedBox(
+                ),
+                SizedBox(
                     height: 10.0
                 ),
                 FlipCard(
@@ -989,7 +991,7 @@ class _BuyerSearchState extends State<BuyerSearch> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyCart())),
                         child: Icon(
                           Icons.add_shopping_cart,
                           color: Colors.black45,
