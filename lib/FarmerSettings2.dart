@@ -1,5 +1,6 @@
-import 'package:agroexpress/FarmerHome.dart';
+import 'package:agroexpress/FarmSearch.dart';
 import 'package:agroexpress/FarmerSettings1.dart';
+import 'package:agroexpress/FarmerUpload.dart';
 import 'package:flutter/material.dart';
 
 class FarmerSetTwo extends StatefulWidget {
@@ -171,7 +172,7 @@ class _FarmerSetTwoState extends State<FarmerSetTwo> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: FlatButton(
-                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmerHome())),
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmSearch())),
                         child: Icon(
                           Icons.control_point,
                           color: Colors.black45,
@@ -185,7 +186,7 @@ class _FarmerSetTwoState extends State<FarmerSetTwo> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: FlatButton(
-                        onPressed: () {},
+                        onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmerUpload())),
                         child: Icon(
                           Icons.file_upload,
                           color: Colors.black45,

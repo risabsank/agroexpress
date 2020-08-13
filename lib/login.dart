@@ -1,6 +1,6 @@
 import 'package:agroexpress/BuyerHome.dart';
 import 'package:agroexpress/DriverHome.dart';
-import 'package:agroexpress/FarmerHome.dart';
+import 'package:agroexpress/FarmSearch.dart';
 import 'package:agroexpress/usertype.dart';
 import 'package:flutter/material.dart';
 
@@ -170,7 +170,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerHome()));
                       }
                       else if (usernameController.text == "VJFarms") {
-                        Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmerHome()));
+                        Navigator.push(context, new MaterialPageRoute(builder: (_) => FarmSearch()));
                       }
                       else if (usernameController.text == "TBDrives") {
                         Navigator.push(context, new MaterialPageRoute(builder: (_) => DriverHome()));
