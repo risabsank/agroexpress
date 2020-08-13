@@ -1,5 +1,6 @@
 import 'package:agroexpress/BuyerHome.dart';
 import 'package:agroexpress/BuyerLocal.dart';
+import 'package:agroexpress/BuyerSearch.dart';
 import 'package:agroexpress/BuyerSettings2.dart';
 import 'package:agroexpress/login.dart';
 import 'package:flutter/material.dart';
@@ -343,7 +344,7 @@ class _BuyerSetOneState extends State<BuyerSetOne> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10.0),
                   child: FlatButton(
-                    onPressed: () {},
+                    onPressed: () => Navigator.push(context, new MaterialPageRoute(builder: (_) => BuyerSearch())),
                     child: Icon(
                       Icons.search,
                       color: Colors.black45,

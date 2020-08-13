@@ -81,7 +81,7 @@ class _DriveSetOneState extends State<DriveSetOne> {
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
-                          "Identity: Buyer",
+                          "Identity: Driver",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 20.0,
@@ -104,7 +104,7 @@ class _DriveSetOneState extends State<DriveSetOne> {
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
-                          "Username: RSBuys",
+                          "Username: TBDrives",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 20.0,
@@ -150,7 +150,7 @@ class _DriveSetOneState extends State<DriveSetOne> {
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
-                          "Email: rsbuys@gmail.com",
+                          "Email: tbdrives@gmail.com",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 20.0,
