@@ -445,22 +445,47 @@ class _FarmerUpdateState extends State<FarmerUpdate> {
             SizedBox(
               height: 10.0,
             ),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.white24,
-                borderRadius: BorderRadius.circular(15.0),
-              ),
-              child: FlatButton(
-                onPressed: () {},
-                child: Text(
-                  "Save",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.w600
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white24,
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  child: FlatButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Save",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.w600
+                      ),
+                    ),
                   ),
                 ),
-              ),
+                SizedBox(
+                  width: 50.0,
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white24,
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  child: FlatButton(
+                    onPressed: () {createAlertDialog(context);},
+                    child: Text(
+                      "Add Product",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.w600
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
             Container(
               decoration: BoxDecoration(
